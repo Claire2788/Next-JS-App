@@ -6,7 +6,8 @@ To support client-side navigation (this takes place in the browser, without maki
 import Link from 'next/link'
 
 const linkStyle = {
-  marginRight: 15
+  marginRight: 15,
+  color: 'white',
 }
 
 const Header = () => (
@@ -16,6 +17,12 @@ const Header = () => (
         </Link>
         <Link href="/about">
           <a style={linkStyle}>About</a>
+        </Link>
+        <Link href="/projects">
+          <a style={linkStyle}>Projects</a>
+        </Link>
+        <Link href="/contact">
+          <a style={linkStyle}>Contact</a>
         </Link>
     </div>
 )

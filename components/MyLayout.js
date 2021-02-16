@@ -12,7 +12,8 @@ import Header from './Header'
 const layoutStyle = {
     margin: 20,
     padding: 20,
-    border: '1px solid #DDD'
+    border: '1px solid #DDD',
+	background: '#76d7c4',
 }
 
 /* Notice in the example below that we pass children and title as props to the Layout components.
