@@ -1,5 +1,5 @@
 //Import the Link API
-import Link from 'next/Link'
+import Link from 'next/link'
 export default() => (
  <div>
     <Link href="/index">
