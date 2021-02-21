@@ -13,6 +13,20 @@ Create a folder called static in your project root directory. From your code you
 Note: Don't name the static directory anything else. The name is required and is the only directory that Next.js uses for serving static assets.*/
 export default () => (
 	<Layout>
+		<script
+					async
+					src="https://www.googletagmanager.com/gtag/js?id=G-50GGP533HB">
+				</script>
+				<script dangerouslySetInnerHTML={
+					{ __html: `
+					window.dataLayer = window.dataLayer || [];
+					function gtag(){dataLayer.push(arguments);}
+					gtag('js', new Date());
+				  
+					gtag('config', 'G-50GGP533HB');
+					`}
+				}>
+				</script>
 		
 		<h1 style={layoutStyle}>Welcome to my Portfolio</h1>
 	    <h1 style={layoutStyle}>My name is Claire Smithard</h1>
